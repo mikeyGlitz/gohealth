@@ -1,0 +1,9 @@
+run:
+  skip-files:
+    - (.+)_test.go
+
+issues:
+  exclude-rules:
+    - path: health/healthchecker.go
+      linters:
+        - errcheck
